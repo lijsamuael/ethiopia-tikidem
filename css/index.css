@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: 0;
+    background: linear-gradient( rgba(32, 8, 240, 0.45), rgba(32, 8, 240, 0.45)), url("../images/bck-image.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.icons {
+    flex: 0 0 200px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    color: #a9c25d;
+    text-align: center;
+    padding: 5px;
+}
+
+.icons img {
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.icons button {
+    background-color: #39395f;
+    color: white;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #39395f;
+    padding: 5px;
+    margin: 5px;
+}
+
+.icons:hover {
+    transform: scale(1.1);
+}
+
+.icons button:hover {
+    background-color: #a9c25d;
+    color: #39395f;
+}
+
+.discription {
+    background-color: #a1a1ac;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    background-color: #416a59;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.card {
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
+    background-color: #9cd86e;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 350px;
+    width: 400px;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 6px 0px #fff;
+}
+
+.card1 {
+    background-color: #39395f;
+}
+
+.ketema {
+    display: felx;
+    justify-content: space-around;
+    background-color: #9cd86e;
+}
+
+.card .text {
+    padding: 0 20px 20px;
+}
+
+.image-container {
+    padding: 2px 16px;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 110px;
+    background-color: #73a24a;
+    border-radius: 10px;
+    height: 600px;
+}
+
+.header img {
+    max-width: 500px;
+    border-radius: 20%;
+}
+
+.header h1,
+h3 {
+    margin: 10px;
+}
+
+.heading {
+    padding: 20px;
+}
+
+.heading-image {
+    padding: 10px;
+}
+
+.headings h3 {
+    padding-top: 20px;
+    color: #39395f;
+    text-align: center;
+}
+
+.middle-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #a9c25d;
+    padding: 10px;
+}
+
+.middle-nav img {
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
+    z-index: 0;
+}
+
+.middle-nav h2 {
+    color: #39395f;
+}
+
+.middle-nav img:hover {
+    background-color: rgb(0, 255, 76);
+    opacity: 75%;
+}
+
+.rivers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #39395f;
+    margin-top: 5px;
+    height: 100px;
+    width: 100%;
+}
+
+nav {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0 5%;
+    height: 100px;
+    border-radius: 0 0 10px 10px;
+    background-color: #39395f;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+nav .logo {
+    float: left;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    color: yellow;
+}
+
+nav .logo span {
+    color: red;
+}
+
+nav .logo p::first-letter {
+    font-size: 100px;
+    color: green;
+}
+
+nav .links {
+    float: right;
+    width: auto;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+
+nav .links li {
+    list-style: none;
+}
+
+nav .links a {
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    color: #a9c25d;
+    ;
+    text-decoration: none;
+}
+
+nav .links a:hover {
+    color: orange;
+    border-bottom: 3px solid rgb(0, 255, 21);
+    transition: border-bottom 0.5s ease-out;
+}
+
+#bar-toggle {
+    position: absolute;
+    top: -100px;
+}
+
+nav .small-menu {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    transform: translateY(50%);
+}
+
+.small-menu .line {
+    width: 30px;
+    height: 5px;
+    margin: 5px;
+    border-radius: 3px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #39395f;
+    color: white;
+}
+
+.footer h2 {
+    align-items: center;
+}
+
+.member {
+    margin: 20px;
+}
+
+.footer img {
+    border-radius: 50%;
+}
+
+.member:hover {
+    transform: scale(1.2)
+}
+
+@media screen and (max-width: 860px) {
+    .container {
+        bottom: 100px;
+    }
+    .login {
+        width: 70%;
+        max-width: 400px;
+    }
+    .login label {
+        display: none;
+    }
+    .login input {
+        display: block;
+        width: 100%;
+    }
+    .login .l-btn {
+        min-width: 50px;
+        width: 30%;
+    }
+    nav .logo {
+        float: none;
+        width: 100%;
+        justify-content: center;
+    }
+    nav .links {
+        min-width: 50%;
+        float: none;
+        position: fixed;
+        z-index: 9;
+        right: 0;
+        top: 100px;
+        bottom: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: auto;
+        background-color: rgb(25, 29, 36);
+        opacity: 0.7;
+        border-radius: 0 0 0 100px;
+        overflow: hidden;
+    }
+    nav .links li {
+        /* line-height: 70px; */
+    }
+    nav .links a {
+        font-size: 16px;
+    }
+    nav :checked~.links {
+        bottom: 0;
+    }
+    nav .small-menu {
+        display: block;
+    }
+    nav :checked~.small-menu .line:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+    nav :checked~.small-menu .line:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+    nav :checked~.small-menu .line:nth-child(2) {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .header img {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 200px) {
+    img {
+        display: none;
+    }
+    nav .logo p {
+        display: none;
+    }
+}
